@@ -1,0 +1,283 @@
+body{
+    font-family: "Lexend", sans-serif;
+}
+.navbar .contanair {
+    display: flex; text-align: center; justify-content: center;
+    font-size: 15px; width: 40%; height: 50px;
+    padding-top: 4px; padding-bottom: 0px; margin-left: 360px;
+}
+ .navbar  div  {
+    cursor: pointer;
+}
+.navbar div i{
+    font-size: 18px;
+}
+ .navbar .contanair div{
+    margin: 0px 20px; color: black;
+}
+#homePage{
+    background-image: url('img/banner-3.jpg'), linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    width: 100%; height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#homePage #contanair{
+   width: 700px; height: 350px; 
+   padding: 130px 20px 50px 70px;
+}
+#homePage #contanair p{
+    font-size: 17px;padding: 5px;
+}
+#homePage #contanair h1{
+    font-weight: 600; color:#418eb2;
+    letter-spacing: 2px;
+}
+@media (max-width: 576px){
+    .navbar .contanair {
+        font-size: 15px; width: 100%; height: 50px;
+        padding:7px 10px 0px 0px; margin: 0px;
+    }
+     .navbar .contanair div{
+        margin: 0px 8px; font-size: 15px;
+    }
+    #homePage #contanair{
+        width: 95%;
+        padding: 120px 0px 30px 15px;
+     }
+    #homePage #contanair h1{
+        letter-spacing: 1px;
+    }
+    #homePage #contanair p{
+        font-size: 16px;padding: 5px 0px;
+    }
+}
+#servieceCard{
+    display: flex; flex-direction: row; justify-content: center; align-items: center;
+    margin: 20px 0px ;
+}
+#servieceCard .service{
+    border: 1px solid #dc3545;
+    margin: 20px; padding: 10px 10px 10px 27px;
+    width: 270px; height: 100px;
+    display: flex;
+}
+#servieceCard .service div{
+ padding: 13px 0px 0px 20px;
+}
+#servieceCard h6 {
+    font-weight: bold;
+}
+#servieceCard  p{
+    font-weight: 50; color: grey;
+}
+#servieceCard .service img{
+    width: 50px;
+}
+#sofaCards{
+    display: flex; justify-content: center;
+}
+#sofaCards .sofaCard {
+    display: flex;
+   background-color: #eee;
+   padding: 10px; margin: 10px 35px;
+}
+#sofaCards .sofaCard div {
+    padding: 30px 30px;
+}
+#sofaCards .sofaCard p {
+    font-size: 17px; font-weight: 600; color:#dc3545;
+}
+#shoppingCards{
+    display: grid;grid-template-columns: repeat(3, 1fr); 
+    margin: 0px 0px 10px 50px;
+}
+#shoppingCards .shopCard{
+    position: relative;
+    margin: 10px;
+}
+#shoppingCards .shopCard p{
+ text-align: center;font-size: 22px; 
+ color: #fff; font-weight: 600;
+}
+.overlay{
+    position: absolute; top: 0px; left: 0px;
+    width: 350px; height: 220px;
+    background-color: rgb(43 45 66 / 55%);
+}
+h4{
+    padding: 40px 0px 10px 60px; 
+    letter-spacing: 2px; font-weight: 700; color: #418eb2;
+}
+.topItem{
+    position: relative;
+    margin: 0px 30px;
+}
+.topItem p {
+    position: absolute; top: 75px; left: 35px;   padding: 5px;
+    color: #fff; background-color: rgba(0, 0, 0, 0.7);
+}
+#topItems{
+    display: flex;justify-content: center;
+}
+@media (max-width: 576px){
+    #servieceCard{
+        display: flex; flex-direction: column;
+    }
+    #servieceCard .service{
+        margin: 10px;
+    }
+    #sofaCards{
+        flex-direction: column;
+    }
+    #sofaCards .sofaCard img {
+        width: 100px;
+    }
+    #sofaCards .sofaCard div {
+        padding: 20px 20px;
+    }
+    #sofaCards .sofaCard {
+       padding: 10px; margin:20px 10px;
+    }
+    #shoppingCards{
+       display: flex; flex-direction: column;
+       margin: 10px;
+    }
+    #shoppingCards .shopCard{
+        margin: 12px 27px;
+    }
+    #shoppingCards .shopCard img  , .overlay{
+        width: 280px; height: 220px;
+    }
+    h4{
+        padding: 15px 5px 10px 10px; letter-spacing: 1px;
+    }
+    #topItems{
+        flex-direction: column;
+    }.topItem{
+        margin: 0px 75px;
+    }
+}
+#mainItems{
+    display: grid;grid-template-columns: repeat(4, 1fr); 
+     padding:20px 40px; background-color: #eee;
+}
+.product{
+    position: relative; width: 275px;
+    margin: 10px 0px 15px 15px; border: 0.5px #586066 solid;
+}
+.product .offer , .product i{
+    position: absolute;
+    font-size:15px ; font-weight: 600;
+}
+.product .offer {
+    top: 8px; left: 3px; 
+    background-color: #2e8b57; color: #fff; padding: 2px 4px;
+}
+.product i {
+    top: 5px; right: 5px; 
+    background-color: #fff; border-radius: 50%; padding: 10px;
+}
+.product h5{
+    font-size: 20px;letter-spacing: 1px;
+}
+.product h6{
+    font-size: 20px; padding-top: 7px; color: #2e8b57; font-weight: 500;
+}
+.product .price {
+    font-size: 22px; font-weight: 600; color:#dc3545;
+}
+.product #rate{
+    display: block;
+}
+.product .btn {
+    width: 273px; height: 40px; padding: 10px;
+}
+.product .info {
+    padding: 10px 20px;
+}
+#cartContent{
+    display: flex; flex-direction: column;
+}
+#itemInCart{
+    display: flex; justify-content: space-between;
+    padding: 5px;
+}
+#itemInCart p{
+    padding: 25px 0px 0px 0px; align-items: center;
+}
+#itemInCart .btn{
+    width: 90px; height: 35px; margin-top: 20px; padding: 5px;
+}
+@media (max-width: 576px){
+    #mainItems {
+      display: flex; flex-direction: column;
+      margin-left: 0px; padding: 0px;
+    }
+    .product{
+     margin: 20px 40px;
+    }
+    #itemInCart p{
+        padding: 10px 5px;
+    }
+    #itemInCart .name {
+        display: none;
+    }
+    #itemInCart img {
+        width: 90px;
+    }
+    #itemInCart .btn{
+        width: 90px;  margin-top: 10px; padding: 5px;
+    }
+}
+.like {
+    color: #dc3545;
+}
+.offerImg img {
+    float: center; margin: 30px 50px; border: #586066 3px solid;
+}
+.offerImg {
+    padding: 20px 40px;
+}
+footer{
+    display: flex; justify-content: space-around; background-color: #fffbfb;
+}
+footer a{
+    display: block; line-height: 33px; 
+    transition: all ease-in-out 0.3ms;
+    cursor: pointer; color: black; text-decoration: none;
+}
+footer .contanair a:hover{
+    color: #dc3545;
+}
+footer h6{
+    font-size: 19px; font-weight:600;
+}
+footer h5 {
+    font-size: 21px; letter-spacing: 1px; font-weight: 600; color: #dc3545;
+}
+footer p {
+    font-size: 15px;
+}
+footer .contanair{
+    padding: 20px 30px; margin-right: 25px;
+}
+footer .contanair input{
+    width: 240px; height: 38px; border: none; padding: 3px;
+}
+footer .contanair div {
+    display: flex;border: 1px solid #dc3545;margin: 3px 5px;
+}
+@media (max-width: 576px){
+    footer{
+        flex-direction: column;
+    }
+    footer .contanair input{
+        width: 150px; height: 38px;
+    }
+    footer .contanair{
+        padding: 20px 30px; margin-right: 0px;
+    }
+    .offerImg {
+        display: none;
+    }
+}

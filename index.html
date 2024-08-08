@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sheet.css">
+<link rel="stylesheet" href="sheet.css">
+<title>Store</title>
+</head>
+<body>
+    <div id="homePage">
+        <nav class="navbar">
+            <div class="contanair">
+                <div><i class="fa fa-bars" aria-hidden="true"></i><p>Menu</p></div>
+                <div><i class="fa fa-search" aria-hidden="true"></i><p>Search</p></div>
+                <div data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-shopping-cart" aria-hidden="true" id="cartIcon"></i><p>Cart</p></div>
+                <div><i class="fa fa-heart-o" aria-hidden="true"></i><p>Wish list</p></div>
+                <div><i class="fa fa-moon-o" aria-hidden="true"></i><p>Mode</p></div>
+            </div>
+        </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="cartContent"><!--cart content here js --></div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Cart</button>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="contanair" id="contanair">
+            <h1>Best Collection For Home Decoration</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate distinctio explicabo id vero magnam eum consectetur inventore eaque. Quod consectetur obcaecati iusto rerum.</p>
+            <button type="button" class="btn btn-outline-dark">Shop Now</button>
+        </div>
+    </div>
+    <div class="contanair" id="servieceCard">
+        <div class="service">
+            <img src="img/delivery-van.svg">
+            <div><h6>Free shipping</h6> <p> Orders over $200</p></div>
+        </div>
+        <div class="service">
+            <img src="img/money-back.svg">
+            <div><h6>Money Returns</h6> <p>30 Days money return</p></div>
+        </div>
+        <div class="service">
+            <img src="img/service-hours.svg">
+            <div><h6>24/7 Support</h6> <p>Customer support</p></div>
+        </div>
+    </div>
+    <div id="sofaCards" class="contanair"><!-- add 2 cards in js file--></div>
+    <h4>SHOP BY CATEGORY</h4>
+    <div class="contanair" id="shoppingCards"><!-- add cards by category in js file--></div>
+    <h4>TOP NEW ARRIVAL</h4>
+    <div id="topItems" class="contanair"><!--top new items in js file--></div>
+    <div id="mainItems" class="contanair"><!--top new items in js file--></div>
+    <div class="offerImg"><img src="img/offer-2.jpg" width="90%"></div>
+    <footer>
+        <div class="contanair">
+            <h5>Furniture Cart</h5> <p>Lorem ipsum, or lipsum as it is sometimes kno wn,<br>is dummy text used in laying out print,<br>gra phic or web designs the passage.</p> <h6>NEWSLETTER</h6>
+            <div>
+                <input type="email" id="email" placeholder="Your Email"><button  type="button" class="btn btn-outline-danger">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="contanair">
+            <h6>MY ACCOUNT</h6> <a href="#">Orders</a><a href="#">Wishlist</a><a href="#">Track Order</a><a href="#">Manage Account</a><a href="#">Return Order</a>
+        </div>
+        <div class="contanair">
+            <h6>INFORMATION</h6> <a href="#">About Us</a><a href="#">Return Policy</a><a href="#">Terms & Condition</a><a href="#">Privacy Policy</a><a href="#">FAQ</a>
+        </div>
+    </footer>
+<script src="main.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
